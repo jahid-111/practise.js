@@ -77,10 +77,12 @@ let arraysAre = [10, 20, 31, 40, 55];
 const totalNumber = the_number(arraysAre);
 console.log(totalNumber); */
 
-// ==================================
+
+
+// ================================== 100% DONE
 // FIND ODD NUMBER FROM ARRAY 
 
-function the_number(digit) {
+/* function the_number(digit) {
     let sum = 0;
     for (i = 0; i < digit.length; i++) {
         let arrayIndex = i;
@@ -91,5 +93,20 @@ function the_number(digit) {
     }
 }
 let arraysAre = [10, 20, 31, 40, 55, 51, 43, 903];
-const totalNumber = the_number(arraysAre);
+const totalNumber = the_number(arraysAre); */
 // console.log(totalNumber);
+
+
+
+/* ======================================================================
+HOURS TO MINUTES CONVERT                                                       100% DONE
+====================================================================== */
+
+
+function tota_minutes(minute) {
+    let second = 60;
+    minutes = second * minute;
+    console.log("Your Calculate Output are", minutes, "Minutes");
+}
+let hours = 300;
+const result = tota_minutes(hours)
