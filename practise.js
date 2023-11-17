@@ -56,7 +56,7 @@ else (
 
 
 // ================================ 95% done
-// FROM ARRAY TO SUM BY FUNCTION 
+// FROM ARRAY TO SUM BY FUNCTION
 
 
 
@@ -80,7 +80,7 @@ console.log(totalNumber); */
 
 
 // ================================== 100% DONE
-// FIND ODD NUMBER FROM ARRAY 
+// FIND ODD NUMBER FROM ARRAY
 
 /* function the_number(digit) {
     let sum = 0;
@@ -102,11 +102,36 @@ const totalNumber = the_number(arraysAre); */
 HOURS TO MINUTES CONVERT                                                       100% DONE
 ====================================================================== */
 
-
-function tota_minutes(minute) {
+/*
+function total_minutes(minute) {
     let second = 60;
     minutes = second * minute;
     console.log("Your Calculate Output are", minutes, "Minutes");
 }
 let hours = 300;
-const result = tota_minutes(hours)
+const result = total_minutes(hours) */
+
+
+/* ================================================================
+            FIND LEAP YEAR FROM ARRAYS VALUE AND MAKE OUTPUT IN THE ARRAY------------------ 90%done
+================================================================
+ */
+
+function find_leap_year(year) {
+
+    const ArrayBox = [];
+
+    for (i = 0; i < year.length; i++) {
+        theIndex = i;
+        theValue = year[i];
+        if (theValue % 4 === 0) {
+            // console.log(theValue);
+            ArrayBox.push(theValue);
+        }
+    }
+    return ArrayBox;
+}
+let theYear = [2000, 2005, 2008, 2012, 2018, 2014, 2020, 2023, 2024]
+const Output = find_leap_year(theYear)
+console.log("Those are the Leap Year", Output);
+
