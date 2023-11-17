@@ -117,7 +117,7 @@ const result = total_minutes(hours) */
 ================================================================
  */
 
-function find_leap_year(year) {
+/* function find_leap_year(year) {
 
     const ArrayBox = [];
 
@@ -133,5 +133,42 @@ function find_leap_year(year) {
 }
 let theYear = [2000, 2005, 2008, 2012, 2018, 2014, 2020, 2023, 2024]
 const Output = find_leap_year(theYear)
-console.log("Those are the Leap Year", Output);
+console.log("Those are the Leap Year", Output); */
 
+// RESULT ::: // Those are the Leap Year[2000, 2008, 2012, 2020, 2024]
+
+
+
+/* var greet = function (name) {
+    console.log("Hello, " + name + "!");
+};
+
+console.log(greet); */
+
+/* let greet = (name) => {
+    console.log("Hello, " + name + "!");
+}; */
+/* let greet = (name) => {
+    console.log("Hello, " + name + "!");
+};
+
+console.log(greet); */
+
+// ===============
+
+
+function the_year(year) {
+    let arrayBox = [];
+    for (i = 0; i < year.length; i++) {
+        indexofyear = i;
+        mixiing = year[indexofyear];
+        if (mixiing % 4 === 0) {
+            // console.log(mixiing)
+            arrayBox.push(mixiing)
+        }
+    }
+    return arrayBox;
+}
+let theYearOf = [2018, 2023, 2024, 2032, 2042, 2035, 3000];
+const Output = the_year(theYearOf);
+console.log(Output);
